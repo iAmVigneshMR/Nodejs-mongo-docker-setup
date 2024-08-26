@@ -1,0 +1,39 @@
+GET http://localhost:3000/crudapis/getAllUsers
+
+###
+
+POST http://localhost:3000/crudapis/createUsers HTTP/1.1
+content-type: application/json
+
+{
+    "name": "vignesh",
+    "email":"vignesh@gmail.com",
+    "age": 27,
+    "company": "koyal",
+    "salary":  58222,
+    "workExperence": 3
+}
+
+###
+
+POST http://localhost:3000/crudapis/editUsers HTTP/1.1
+content-type: application/json
+
+{
+    "id": "6693c2ad7d7b78dcb908e643",
+    "name": "vignesh M R",
+    "email":"vignesh@gmail.com",
+    "age": 27,
+    "company": "koyal tech",
+    "salary":  58222,
+    "workExperence": 3
+}
+
+###
+
+POST http://localhost:3000/crudapis/deleteUsers HTTP/1.1
+content-type: application/json
+
+{
+  "id": "6693c091b37296f23e8a25cd"
+}
