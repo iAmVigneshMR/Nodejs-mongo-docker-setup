@@ -14,9 +14,14 @@ app.use(cors());
 app.use('/crudapis', routesUrls);
 
 // mongoose.connect('mongodb://root:123@localhost:27017/?authSource=admin', {
-mongoose.connect('mongodb://root:123@mongodb:27017/express-mongo', {
+// mongoose.connect('mongodb://root:123@mongodb:27017/express-mongo', {
+// mongoose.connect('mongo://root:123@mongo:27017/', {
+// mongoose.connect('mongo://root:root123@mongo:27017/express-mongo', {
 // mongoose.connect('mongodb://root:123@localhost:27017/express-mongo', {
-// mongoose.connect('mongodb://mongodb-001:27017/', {
+  // mongoose.connect('mongodb://mongodb-001:27017/', {
+    // mongoose.connect('mongodb://mongodb:27017/', {
+      mongoose.connect('mongo://mongo:27017/', {
+  // mongoose.connect('mongo://root:pass@mongo:27017/express-mongo?authSource=admin', {
   // dbName: 'event_db',
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -28,7 +33,6 @@ db.on('open', () => {
   console.log('Connected to mongoDB');
 });
 db.on('error', (error) => {
-  console.log('coso;e eroor ---------------------------------------')
   console.log({error})
 })
 

@@ -3,7 +3,7 @@
 import express from 'express';
 export const router = express.Router();
 // const { getAllUsers, saveUsers, editUsers, deleteUsers } = '../controllers/index';
-import { getAllUsers, saveUsers, editUsers, deleteUsers } from '../controllers/index.js';
+import { getAllUsers, saveUsers, editUsers, deleteUsers } from '../src/controllers/index.js';
 // const { getAllUsers, saveUsers, editUsers, deleteUsers } = require('../controllers/index');
 
 router.route("/getAllUsers").get(getAllUsers);
